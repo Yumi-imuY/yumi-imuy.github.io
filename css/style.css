@@ -45,7 +45,7 @@ li {
 
 a {
   color: aliceblue;
-  background-color: #ff0000;
+  background-color: #ff8888;
   text-decoration: none;
   font-family: "Amatic SC", sans-serif;
 }
@@ -54,4 +54,24 @@ a:hover {
 }
 img {
   filter: drop-shadow(10px 5px 10px rgba(255, 0, 0, 0.45));
+}
+.rotate {
+  display: inline-flex;
+  color: #f1f1f1;
+  padding: 3px;
+  margin: 10px;
+
+  animation: rotate 5s linear 0s infinite normal none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.rotate:hover {
+  color: rgba(38, 0, 188, 0.719);
 }
