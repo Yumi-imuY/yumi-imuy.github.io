@@ -1,7 +1,7 @@
 body {
   background-color: #00ff918b;
   background-image: url("../images/Untitled.jpg");
-  background-image: blur(10px);
+  
   background-size: cover;
   /* filter: blur(10px); */
 
@@ -68,9 +68,11 @@ img {
   padding: 3px;
   margin: 10px;
 
-  animation: rotate 5s linear 0s infinite normal none;
+ 
 }
-
+.rotate:hover { 
+  animation: rotate 5s linear 0s infinite normal none; 
+ } 
 @keyframes rotate {
   from {
     transform: rotateY(0deg);
@@ -79,9 +81,7 @@ img {
     transform: rotateY(360deg);
   }
 }
-/* .rotate:hover { 
-  color: rgba(38, 0, 188, 0.313);
- } */
+
 p {
   font-family: "Times New Roman", Times, serif;
   font-size: larger;
