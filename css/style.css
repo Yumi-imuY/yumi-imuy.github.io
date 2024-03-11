@@ -1,23 +1,57 @@
+* {
+    border: 1px solid red;
+}
 body{
   margin: 0; 
 }
 
-.container {
-    background-color: blueviolet;
-    background-image: -moz-radial-gradient();
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 20px;
-    height: 50vh;
 
+
+html{
+    scroll-behavior: smooth;
 }
-.child {
-    background-color: rgb(43, 226, 61);
-    width: 100px;
-    height: 3vh;
+.header{
+background-color: blueviolet; 
+display: flex; 
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
 }
-.second{
-    text-align: center;
-    width: 50%;
+.logo{
+    width: 60 px;
+    height: 60 px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{}
+.menu ul {
+   display: flex;
+   gap: 8px;
+   list list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+   
+}
+.menu a
+{ 
+    display: block;
+    text-decoration: none;
+    color: azure;
+    padding:3 px 7px;
+    border-radius: 50%;
+}  
+.menu a:hover{
+    background-color: aqua;
+}
+.section
+{
+height: 90vh;
+border: 1px solid red;
 }
