@@ -1,57 +1,101 @@
-* {
+/* * {
     border: 1px solid red;
-}
-body{
-  margin: 0; 
+} */
+body {
+  margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  background-color: rgba(1, 76, 10, 0.342);
+  display: flex;
+  justify-content: space-around;
 
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.logo {
+  width: 60 px;
+  height: 60 px;
 
-html{
-    scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header{
-background-color: blueviolet; 
-display: flex; 
-justify-content: space-between;
-align-items: center;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
+.menu {
 }
-.logo{
-    width: 60 px;
-    height: 60 px;
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.menu{}
 .menu ul {
-   display: flex;
-   gap: 8px;
-   list list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.menu li{
-   
+.menu li {
 }
-.menu a
-{ 
-    display: block;
-    text-decoration: none;
-    color: azure;
-    padding:3 px 7px;
-    border-radius: 50%;
-}  
-.menu a:hover{
-    background-color: aqua;
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: azure;
+  padding: 3 px 7px;
+  /* border-radius: 50%; */
 }
-.section
-{
-height: 90vh;
-border: 1px solid red;
+.menu a:hover {
+  color: aqua;
+}
+.contact a {
+  text-decoration: none;
+  color: azure;
+}
+.contact a:hover {
+  color: aqua;
+}
+.section {
+  height: 100vh;
+  border: 1px solid red;
+}
+.sectionhome {
+  padding-top: 12%;
+  padding-left: 25%;
+  height: 74vh;
+  border: 1px solid rgb(117, 114, 114);
+  background-image: url("../images/njoy.jpg");
+  background-repeat: no-repeat;
+}
+.sectionhome h1 {
+  display: flex;
+
+  padding-bottom: 0%;
+
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  width: 550px;
+  letter-spacing: 5px;
+}
+.sectionhome p {
+  display: flex;
+  inline-size: min-content;
+  font-size: 16px;
+  padding-bottom: 0%;
+  width: 150px;
+
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+.sectionhome a {
+  text-decoration: none;
+  color: azure;
+  background-color: rgb(5, 133, 41);
+  padding: 1%;
+}
+.sectionabout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(1, 76, 10, 0.342);
 }
