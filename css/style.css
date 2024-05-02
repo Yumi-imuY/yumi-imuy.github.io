@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  margin: 0vh;
+  background-color: rgb(245, 234, 234);
 }
 @font-face {
   font-family: "CraftworkGrotesk";
@@ -62,15 +63,18 @@ html {
   }
 }
 .header {
-  background-color: rgba(1, 76, 10, 0);
   display: flex;
   justify-content: space-around;
-
   align-items: center;
-  position: fixed;
-  top: 1;
+  position: sticky;
+  top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  z-index: 1;
+  margin-bottom: 10px;
+  margin-inline-start: -10vh;
+  margin-inline-end: -10vh;
 }
 .logo {
   width: 60 px;
@@ -84,10 +88,11 @@ html {
 }
 .menu ul {
   display: flex;
-  gap: 8px;
+  gap: 40px;
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #00000000;
 }
 .menu li {
 }
@@ -97,54 +102,91 @@ html {
   color: azure;
   padding: 3 px 7px;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 20px;
 }
 .menu a:hover {
-  color: aqua;
+  color: rgb(251, 255, 0);
 }
-.contact a {
-  text-decoration: none;
-  color: azure;
-}
-.contact a:hover {
-  color: aqua;
-}
+
 .section {
   height: 100vh;
-  border: 1px solid red;
 }
 .sectionhome {
   padding-top: 12%;
   padding-left: 25%;
   height: 74vh;
-  border: 1px solid rgb(117, 114, 114);
-  background-image: url("../images/njoy.jpg");
+  /* border: 1px solid rgb(117, 114, 114); */
+  background-image: url("../images/marku.PNG");
   background-repeat: no-repeat;
 }
-.sectionhome h1 {
-  display: flex;
-
-  padding-bottom: 0%;
-
-  color: rgb(255, 255, 255);
-  font-size: 60px;
-  width: 550px;
-  letter-spacing: 5px;
+.slider {
+  width: 1100px;
+  height: 600px;
+  overflow: hidden;
 }
-.sectionhome p {
-  display: flex;
-  inline-size: min-content;
-  font-size: 16px;
-  padding-bottom: 0%;
-  width: 150px;
-
-  color: rgb(255, 255, 255);
-  letter-spacing: 2px;
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+.navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  opacity: 7;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.bar :hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+input [name="r1"] {
+  position: absolute;
+  visibility: hidden;
+}
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -25;
+}
+#r3:checked ~ .s1 {
+  margin-left: -50;
+}
+.text {
+  margin: top 100px;
+  display: flex;
+  justify-content: left;
+  align-items: self-start;
+}
+
 .sectionhome a {
   text-decoration: none;
   color: azure;
-  background-color: rgb(5, 133, 41);
+
   padding: 1%;
 }
 .sectionabout {
@@ -152,4 +194,7 @@ html {
   justify-content: space-around;
   align-items: center;
   background-color: rgba(1, 76, 10, 0.342);
+}
+.wrapper {
+  min-height: 100%;
 }
