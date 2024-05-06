@@ -10,7 +10,6 @@ html {
   scroll-behavior: smooth;
   font-family: "CraftworkGrotesk";
 }
-
 .ticker-wrap {
   width: 100%;
   height: 100px;
@@ -32,7 +31,6 @@ html {
   left: 0%;
   animation: swap 20s linear infinite;
 }
-
 .item {
   display: inline-block;
   padding: 0px;
@@ -51,7 +49,6 @@ html {
     transform: translateX(-100%);
   }
 }
-
 @keyframes swap {
   0%,
   50% {
@@ -68,133 +65,91 @@ html {
   align-items: center;
   position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 99999;
-  margin-bottom: 10px;
-  margin-inline-start: -10vh;
-  margin-inline-end: -10vh;
+  background: rgba(0, 0, 0, 0.7);
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .logo {
   width: 60 px;
   height: 60 px;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.menu {
-}
 .menu ul {
   display: flex;
+  align-items: center;
   gap: 40px;
   list-style: none;
   margin: 0;
   padding: 0;
   background-color: #00000000;
 }
-.menu li {
-}
 .menu a {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: azure;
-  padding: 3 px 7px;
-  border-radius: 50%;
   font-size: 20px;
 }
 .menu a:hover {
   color: rgb(251, 255, 0);
+  img{
+    filter: brightness(0) saturate(100%) invert(89%) sepia(74%) saturate(2891%) hue-rotate(360deg) brightness(101%) contrast(105%);
+  }
 }
-
 .section {
   height: 100vh;
 }
-.sectionhome {
-  padding-top: 12%;
-  padding-left: 25%;
-  height: 74vh;
-  /* border: 1px solid rgb(117, 114, 114); */
-  background-image: url("../images/marku.PNG");
-  background-repeat: no-repeat;
+.section h1,h2{
+  margin-left: 15%;
 }
-.slider {
-  width: 1100px;
-  height: 600px;
-  overflow: hidden;
-}
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.navigation {
-  position: absolute;
-  bottom: 16px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-}
-.bar {
-  height: 8px;
-  width: 30px;
-  margin: 6px;
-  cursor: pointer;
-  opacity: 7;
-  border-radius: 10px;
-  transition: all 0.4s ease;
-}
-.bar :hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-input [name="r1"] {
-  position: absolute;
-  visibility: hidden;
-}
-.slides {
-  width: 400%;
-  height: 100%;
-  display: flex;
-}
-.slide {
-  width: 25%;
-  transition: all 0.6s ease;
-}
-.slide img {
+#home .carousel {
   width: 100%;
   height: 100%;
 }
-#r1:checked ~ .s1 {
-  margin-left: 0;
+.carousel button{
+  opacity: 0;
 }
-#r2:checked ~ .s1 {
-  margin-left: -25;
+.carousel button *{
+  opacity: 0;
 }
-#r3:checked ~ .s1 {
-  margin-left: -50;
+.carousel button:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  *{
+    opacity: 100;
+  }
 }
-.text {
-  margin: top 100px;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(74%) saturate(2891%) hue-rotate(360deg) brightness(101%) contrast(105%);
+    width: 5rem;
+    height: 5rem;
+}
+.carousel-inner, .carousel-item{
+  height: 100%;
+}
+.carousel-item img{
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+.carousel-text{
   display: flex;
-  justify-content: left;
-  align-items: self-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 15%;
 }
-
-.sectionhome a {
-  text-decoration: none;
-  color: azure;
-
-  padding: 1%;
+.carousel-text h1{
+  color: white;
 }
-.sectionabout {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgba(1, 76, 10, 0.342);
+.carousel-text h2{
+  color: #bdbdbd;
 }
-.wrapper {
-  min-height: 100%;
+#works{
+  background-color: white;
+}
+#contact{
+  height: 25vh;
 }
