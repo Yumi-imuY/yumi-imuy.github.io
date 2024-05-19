@@ -91,65 +91,113 @@ html {
   align-items: center;
   text-decoration: none;
   color: azure;
-  font-size: 20px;
+  font-size: 30px;
 }
 .menu a:hover {
   color: rgb(251, 255, 0);
-  img{
-    filter: brightness(0) saturate(100%) invert(89%) sepia(74%) saturate(2891%) hue-rotate(360deg) brightness(101%) contrast(105%);
+  img {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(74%) saturate(2891%)
+      hue-rotate(360deg) brightness(101%) contrast(105%);
   }
 }
 .section {
-  height: 100vh;
+  height: 130vh;
 }
-.section h1,h2{
-  margin-left: 15%;
+#home h1,
+h2 {
+  margin-left: 14%;
+  margin-right: 14%;
 }
 #home .carousel {
   width: 100%;
   height: 100%;
 }
-.carousel button{
+.carousel button {
   opacity: 0;
 }
-.carousel button *{
+.carousel button * {
   opacity: 0;
 }
-.carousel button:hover{
+.carousel button:hover {
   background-color: rgba(0, 0, 0, 0.2);
-  *{
+  * {
     opacity: 100;
   }
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: brightness(0) saturate(100%) invert(89%) sepia(74%) saturate(2891%) hue-rotate(360deg) brightness(101%) contrast(105%);
-    width: 5rem;
-    height: 5rem;
+  filter: brightness(0) saturate(100%) invert(89%) sepia(74%) saturate(2891%)
+    hue-rotate(360deg) brightness(101%) contrast(105%);
+  width: 5rem;
+  height: 5rem;
 }
-.carousel-inner, .carousel-item{
+.carousel-inner,
+.carousel-item {
   height: 100%;
 }
-.carousel-item img{
+.carousel-item img {
   width: 100%;
   height: 85%;
   object-fit: cover;
 }
-.carousel-text{
+.carousel-text {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   height: 15%;
 }
-.carousel-text h1{
-  color: white;
+.carousel-text h1 {
+  color: #ffffff;
 }
-.carousel-text h2{
+.carousel-text h2 {
   color: #bdbdbd;
 }
-#works{
+#works {
   background-color: white;
 }
-#contact{
+#contact {
   height: 25vh;
+}
+#inspiration {
+  padding-top: 150px;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 14%;
+  margin-right: 14%;
+  color: aliceblue;
+  height: 75vh;
+}
+#inspiration p1 {
+  font-size: 30px;
+}
+#inspiration p2 {
+  font-size: 80px;
+}
+#about {
+  
+  margin-left: 14%;
+  margin-right: 14%;
+  display: flex;
+  flex-direction: column;
+}
+  
+#about h1 {
+  font-size: 80px;
+  color: aliceblue;
+  margin-bottom: 25vh;
+  
+}
+.text2  {
+ width: 25vh;
+ font-size: 60px; 
+  }
+.box{
+  display: flex;
+  justify-content: baseline;
+  
+}
+
+
+#ar-promt{
+  display: none;
 }
