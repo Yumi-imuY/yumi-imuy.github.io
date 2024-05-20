@@ -154,6 +154,14 @@ h2 {
 }
 #works {
   background-color: white;
+ 
+}
+#works h1{
+  padding-top: 20vh;
+  font-size: 50px;
+  margin-left: 14%;
+  margin-right: 14%;
+
 }
 #contact {
   height: 25vh;
@@ -188,16 +196,12 @@ h2 {
   
 }
 .text2  {
- width: 25vh;
+ 
  font-size: 60px; 
   }
 .box{
   display: flex;
   justify-content: baseline;
-  
-}
+  }
 
 
-#ar-promt{
-  display: none;
-}
