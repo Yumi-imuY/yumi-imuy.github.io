@@ -156,7 +156,7 @@ h2 {
 }
 
 #inspiration {
-  padding-top: 150px;
+  padding-top: 130px;
   justify-content: flex-start;
   flex-direction: column;
   margin-left: 14%;
@@ -165,10 +165,10 @@ h2 {
   height: 75vh;
 }
 #inspiration p1 {
-  font-size: 30px;
+  font-size: 20px;
 }
 #inspiration p2 {
-  font-size: 80px;
+  font-size: 50px;
 }
 #about {
   margin-left: 14%;
@@ -179,7 +179,7 @@ h2 {
 }
 
 .text1 h1 {
-  font-size: 80px;
+  font-size: 60px;
   color: aliceblue;
   margin-bottom: 20vh;
 }
@@ -192,15 +192,15 @@ h2 {
 }
 .text2 h2 {
   margin: 0%;
-  font-size: 30px;
+  font-size: 25px;
 }
 .text2 h1 {
   padding-top: 2%;
-  font-size: 55px;
+  font-size: 38px;
 }
 .text2 h3 {
   padding-top: 30%;
-  font-size: 30px;
+  font-size: 20px;
 }
 .text2 h3:hover {
   color: rgb(251, 255, 0);
@@ -220,9 +220,13 @@ h2 {
   padding-top: 3%;
 }
 #works h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin-left: 14%;
   margin-right: 14%;
+}
+#works h2 {
+  font-size: 20px;
+  
 }
 .mini-container {
   margin-left: 14%;
@@ -244,19 +248,19 @@ h2 {
 .mini-text1 {
   padding-top: 10%;
   margin: 0%;
-  font-size: 20px;
+  font-size: 14px;
   color: #373737;
 }
 .mini-text2 {
   padding-top: 2%;
   margin: 0%;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
 }
 .mini-text3 {
   padding-top: 3%;
   color: #717171;
-  font-size: 29px;
+  font-size: 20px;
   font-weight: thin;
 }
 
@@ -264,7 +268,7 @@ h2 {
   margin-top: 3%;
   display: flex;
   justify-content: end;
-  font-size: 20px;
+  font-size: 0px;
   text-decoration: none;
   color: #000000;
 }
@@ -295,7 +299,7 @@ h2 {
 
 .contactainer h5 {
   color: rgb(170, 170, 170);
-  font-size: 30px;
+  font-size: 15px;
 }
 .contactainer2 {
   display: flex;
@@ -304,7 +308,7 @@ h2 {
 }
 .contactainer2 h6 {
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 30px;
 }
 .mini-con1 h6:hover {
   color: rgb(251, 255, 0);
