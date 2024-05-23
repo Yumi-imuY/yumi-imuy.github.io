@@ -1,15 +1,17 @@
-body {
-  margin: 0vh;
-  background-color: rgb(0, 0, 0);
-}
 @font-face {
   font-family: "CraftworkGrotesk";
   src: url("/fonts/CraftworkGrotesk-Regular.woff") format("woff");
 }
+
 html {
   scroll-behavior: smooth;
   font-family: "CraftworkGrotesk";
 }
+body {
+  margin: 0vh;
+  background-color: rgb(0, 0, 0);
+}
+
 .ticker-wrap {
   width: 100%;
   height: 100px;
@@ -152,20 +154,7 @@ h2 {
 .carousel-text h2 {
   color: #bdbdbd;
 }
-#works {
-  background-color: white;
- 
-}
-#works h1{
-  padding-top: 20vh;
-  font-size: 50px;
-  margin-left: 14%;
-  margin-right: 14%;
 
-}
-#contact {
-  height: 25vh;
-}
 #inspiration {
   padding-top: 150px;
   justify-content: flex-start;
@@ -182,33 +171,154 @@ h2 {
   font-size: 80px;
 }
 #about {
-  
   margin-left: 14%;
   margin-right: 14%;
   display: flex;
   flex-direction: column;
+  height: 118vh;
 }
-  
-#about h1 {
+
+.text1 h1 {
   font-size: 80px;
   color: aliceblue;
-  margin-bottom: 25vh;
-  
+  margin-bottom: 20vh;
 }
-.text2  {
- 
- font-size: 60px; 
-  }
-.box{
-  display: flex;
-  justify-content: baseline;
-  }
-  .mini-container{
-    margin-left: 14%;
-  margin-right: 14%;
+.text2 {
   display: flex;
   flex-direction: column;
+  padding-top: 4%;
+  margin-left: 12%;
+  color: aliceblue;
+}
+.text2 h2 {
+  margin: 0%;
+  font-size: 30px;
+}
+.text2 h1 {
+  padding-top: 2%;
+  font-size: 55px;
+}
+.text2 h3 {
+  padding-top: 30%;
+  font-size: 30px;
+}
+.text2 h3:hover {
+  color: rgb(251, 255, 0);
+}
+
+.box {
+  display: flex;
+  justify-content: baseline;
+}
+#works {
+  height: 140vh;
+  background-color: white;
+  display: flex;
+
+  flex-direction: column;
+}
+#works h1 {
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  font-size: 50px;
+  margin-left: 14%;
+  margin-right: 14%;
+}
+.mini-container {
+  margin-left: 14%;
+  margin-right: 14%;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.mini-container1 {
+  display: block;
+  width: 500px;
+}
+.mini-text1 {
+  padding-top: 10%;
+  margin: 0%;
+  font-size: 20px;
+  color: #373737;
+}
+.mini-text2 {
+  padding-top: 2%;
+  margin: 0%;
+  font-size: 35px;
+  font-weight: bold;
+}
+.mini-text3 {
+  padding-top: 3%;
+  color: #717171;
+  font-size: 29px;
+  font-weight: thin;
+}
+#works h2 {
+  padding-top: 6%;
+  display: flex;
+  justify-content: end;
+  font-size: 20px;
+  margin-left: 14%;
+  margin-right: 14%;
+}
+#works a {
+  text-decoration: none;
+  color: #000000;
+}
+#works a:hover {
+  color: rgb(251, 255, 0);
+}
+#contact {
+  height: 50vh;
+  padding-top: 25vh;
+  margin-left: 14%;
+  margin-right: 14%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cont{
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 6vh;
+}
+.contactainer img {
+  padding-bottom: 50px;
   
+}
+.contactainer img:hover{
+  filter: brightness(0) saturate(100%) invert(89%) sepia(74%) saturate(2891%)
+    hue-rotate(360deg) brightness(101%) contrast(105%);
+}
 
-  }
-
+.contactainer h5 {
+  color: rgb(170, 170, 170);
+  font-size: 30px;
+}
+.contactainer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contactainer2 h6 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+.mini-con1 h6:hover {
+  color: rgb(251, 255, 0);
+}
+.mini-con2 h6:hover {
+  color: rgb(251, 255, 0);
+}
+.mini-con2 {
+  padding-left: 10vh;
+  
+}
+.mini-con2 a {
+  text-decoration: none;
+}
+.mini-con1 a {
+  text-decoration: none;
+}
